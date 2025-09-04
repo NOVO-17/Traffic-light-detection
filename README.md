@@ -4,7 +4,6 @@ This project implements a **real-time traffic light detection system** using **O
 
 It can detect **Red**, **Yellow**, and **Green** lights from a webcam feed, video, or still images.
 
----
 
 ## 📌 Features
 
@@ -14,7 +13,6 @@ It can detect **Red**, **Yellow**, and **Green** lights from a webcam feed, vide
 * Displays bounding boxes and labels on detected lights.
 * Prints detection status (**STOP / READY / GO**) in console.
 
----
 
 ## 🛠️ Installation
 
@@ -30,7 +28,6 @@ Install dependencies:
 pip install opencv-python numpy
 ```
 
----
 
 ## ▶️ Usage
 
@@ -56,7 +53,6 @@ Replace webcam capture:
 cap = cv2.VideoCapture("traffic_light_video.mp4")
 ```
 
----
 
 ## 🔑 HSV Color Ranges
 
@@ -80,7 +76,6 @@ upper_green = np.array([90, 255, 255])
 
 > ⚠️ These values may need tuning depending on **lighting conditions** and **camera type**.
 
----
 
 ## 📸 Example Output
 
@@ -90,7 +85,6 @@ upper_green = np.array([90, 255, 255])
 
 Each detection is shown with a **bounding box + label**.
 
----
 
 ## 🚀 Future Improvements
 
@@ -98,7 +92,6 @@ Each detection is shown with a **bounding box + label**.
 * Integrate with **YOLO/Deep Learning models** for robust real-world detection.
 * Deploy on **Raspberry Pi** for IoT projects.
 
----
 
 ## 📜 License
 
