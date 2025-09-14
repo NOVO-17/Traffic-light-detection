@@ -33,12 +33,11 @@ pip install opencv-python numpy
 
 ### 1. Run with Webcam
 
-```bash
-python traffic_light_detection.py
+```python
+image = cv2.VideoCapture(0)
 ```
 
 ### 2. Run with Image
-
 Change code to load image:
 
 ```python
@@ -46,8 +45,7 @@ image = cv2.imread("traffic_light.jpg")
 ```
 
 ### 3. Run with Video
-
-Replace webcam capture:
+Replace video capture:
 
 ```python
 cap = cv2.VideoCapture("traffic_light_video.mp4")
@@ -84,14 +82,6 @@ upper_green = np.array([90, 255, 255])
 * **GREEN** → "GO"
 
 Each detection is shown with a **bounding box + label**.
-
-
-## 🚀 Future Improvements
-
-* Add **Hough Circle detection** to ensure only circular lights are detected.
-* Integrate with **YOLO/Deep Learning models** for robust real-world detection.
-* Deploy on **Raspberry Pi** for IoT projects.
-
 
 ## 📜 License
 
